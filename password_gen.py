@@ -8,7 +8,7 @@ import string
 # for i, c in enumerate(string.printable):
 #     print(i, c)
 
-password_length = 16
+password_length = 20
 password = ""
 for i in range(password_length):
     random_value = random.random()  # decimal value between 0 and 1
