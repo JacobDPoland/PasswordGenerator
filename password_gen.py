@@ -3,6 +3,7 @@
 
 import random
 import string
+import pyperclip
 
 # used this to find valid indices are 0 to 93
 # for i, c in enumerate(string.printable):
@@ -15,4 +16,5 @@ for i in range(password_length):
     index = int(random_value * 93)
     password += string.printable[index]
 
-print(password)
+pyperclip.copy(password)
+print("New password copied to clipboard")
